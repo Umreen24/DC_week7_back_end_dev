@@ -1,0 +1,19 @@
+
+body{
+    background-color: lavender;
+}
+
+h1{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+#taskList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1vw;
+    color: gray;
+    font-weight: bold;
+}
