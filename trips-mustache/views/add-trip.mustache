@@ -1,0 +1,24 @@
+
+<html>
+<body>
+
+    <h1>Add a New Trip</h1>
+
+    <a href='/'>Home</a>
+    <a href='/trips'>View Trips</a>
+    <a href='/add-trip'>Add Trip</a>
+    
+    <br/>
+    <br/>
+
+    <form action='/add-trip' method='POST'>
+        <h4>Enter Trip Name: <input type='text' name='tripName' placeholder='Enter a trip name'/>
+        <h4>Add an image for your trip! <input type='text' name='imageURL' placeholder='Enter an image url'/>
+        <h4>Enter Destination: <input type='text' name='destination' placeholder='Enter a destination'/>
+        <h4>Enter Departure Date: <input type='date' name='departureDate'/><br/>
+        <h4>Enter Return Date: <input type='date' name='returnDate'/>
+        <button>Save Trip</button>
+    </form>
+
+</body>
+<html>

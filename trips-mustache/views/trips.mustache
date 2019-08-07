@@ -1,0 +1,31 @@
+
+<html>
+<body>
+
+    <h1>Your Upcoming Trips</h1>
+
+    <a href='/'>Home</a>
+    <a href='/trips'>View Trips</a>
+    <a href='/add-trip'>Add Trip</a>
+    
+    <br/>
+    <br/>
+
+    {{#trips}}
+
+        <form action='/delete-trip' method='POST'>
+
+            <input type='hidden' name='tripName' value='{{tripName}}'/>
+            <h3>Trip Name: {{tripName}}</h3>
+            <img src={{imageURL}}>
+            <h3>Location: {{destination}}</h3>
+            <h3>Departure Date: {{departureDate}}</h3>
+            <h3>Return Date: {{returnDate}}</h3><br/>
+            <button>Delete Trip</button>
+
+        </form>
+
+    {{/trips}}
+
+</body>
+</html>
